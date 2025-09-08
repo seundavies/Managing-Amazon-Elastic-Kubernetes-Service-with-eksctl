@@ -80,7 +80,7 @@ kubectl config get-contexts
 ```
 kubectl get svc
 ```
-![aws-get](docs/aws-get.png)
+![aws-get](docs/svg.png)
 
 ### Deploy Microservices with helmfile
 Let’s quickly remind ourselves that;
