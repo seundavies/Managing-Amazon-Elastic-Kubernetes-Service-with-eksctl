@@ -89,7 +89,7 @@ Let’s quickly remind ourselves that;
 Before moving on with the following steps, get helm installed [helm](https://helm.sh/docs/intro/install/)
 - The exact file structure;
 
-![file-strt](docs/file-strt.png)
+![file-strt](docs/kubectl.)
 
 #### Create helm chart
 - Step 1: Create shared helm chart for the 10 microservices by running this command;
@@ -142,9 +142,5 @@ helmfile sync
 helm destroy
 ```
 
-## Resources
-The following are useful resources that really contribute to actualise this project;
-- Docs; aws doc, helm doc, eksctl doc
-- YouTube Channels; TechWorldWithNana, Cloud With Raj, Be A Better Dev, DevOps Made Easy
-- Repo; 
-- 
+
+
