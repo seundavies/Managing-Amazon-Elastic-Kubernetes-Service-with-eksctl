@@ -45,15 +45,15 @@ Git --> GitHub --> eskctl --> helmfile --> kubernetes cluster --> prometheus -->
 
 ### Provision cluster with eskctl
 - Step 1: Programmatic access; 
-![aws-configure](docs/aws-configure.png)
+![aws-configure](docs/programatic.png)
 - Step 2: Install and configure kubectl, AWS CLI and eksctl. [Link to How](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html). Be careful to set and utilise profile name when working with multiple accounts in your machine.
 - Step 3: Creating cluster with (1.) a name (2.) version 1.22 (3.) nodegroup name, type and number in a specify region. Run the command; 
 ```
-eksctl create cluster --name ecommerce --version 1.22 --nodegroup-name clusternode --node-type t3.micro --nodes 2 --managed
+eksctl create cluster --name eksctl --version 1.22 --nodegroup-name clusternode --node-type t3.micro --nodes 2 --managed
 ```
-![aws-cluster](docs/aws-cluster-ready.png)
+![aws-cluster](docs/creating-cluster.png)
 - Step 4; Check Cloudformation and eks from aws management console
-![aws-cluster](docs/aws-cluster.png)
+![aws-cluster](docs/cloudformation.png)
 ![aws-cluster](docs/aws-eks.png)
 With this command, we have successfuly create a eks cluster with 2 nodegroup.
 
