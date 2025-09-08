@@ -54,12 +54,24 @@ eksctl create cluster --name eksctl --version 1.22 --nodegroup-name clusternode 
 ![aws-cluster](docs/creating-cluster.png)
 - Step 4; Check Cloudformation and eks from aws management console
 ![aws-cluster](docs/cloudformation.png)
-![aws-cluster](docs/aws-eks.png)
+![aws-cluster](docs/aws.cluster.png)
 With this command, we have successfuly create a eks cluster with 2 nodegroup.
 
 #### Configure kubectl to communicate with cluster
 - Step 1; Configure your computer to communicate with your cluster. Run the command;
 ```
+Checking the current context:
+kubectl config current-context
+
+List all the available contexts: 
+kubectl config get-contexts
+
+Switch to your EKS cluster’s context:
+kubectl config current-context
+![aws-cluster](docs/aws.cluster.png)
+
+
+
 aws eks update-kubeconfig --region us-east-1 --name ecommerce
 ```
 ![aws-kubeconfig](docs/aws-kubeconfig.png)
