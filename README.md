@@ -20,7 +20,7 @@ A demonstration of how I established a Kubernetes cluster using eksctl and manag
 * [Resources](#resources)
 
 ## Architecture
-![design](docs/assets/designs.svg)
+![design](docs/eksctl-architecture.png)
 
 ## Project Objective
 By the end of each part of this project, we will know how to;
